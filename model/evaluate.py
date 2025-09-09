@@ -4,7 +4,7 @@ from sklearn.metricsimport accuracy_score
 import joblib
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(_file_))  # go one level up
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
 data_path= os.path.join(BASE_DIR, 'data', 'Mall_Customers.csv')
  
 # Load the dataset

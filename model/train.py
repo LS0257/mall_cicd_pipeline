@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(_file_))  
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))  
 data_path= os.path.join(BASE_DIR, 'data', 'Mall_Customers.csv')
 
 # Load the mall customer dataset
