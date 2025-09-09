@@ -16,6 +16,10 @@ data = data.drop('CustomerID', axis=1)
 # Convert categorical variable 'Gender' to numerical values
 data['Genre'] = data['Genre'].map({'Male': 0, 'Female': 1})
 
+# Preprocess the dataset
+X = data.drop('CustomerID', axis=1)
+y = data['CustomerID']
+
 # Split the data into training and test sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
