@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
 data_path= os.path.join(BASE_DIR, 'data', 'Mall_Customers.csv')
  
 # Load the dataset
-data = pd.read_csv(Mall_Customers.csv)
+data = pd.read_csv(data_path)
 
 # Convert categorical variable 'Gender' to numerical values
 data['Genre'] = data['Genre'].map({'Male': 0, 'Female': 1})

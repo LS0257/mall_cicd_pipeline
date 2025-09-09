@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 data_path= os.path.join(BASE_DIR, 'data', 'Mall_Customers.csv')
 
 # Load the mall customer dataset
-data = pd.read_csv("Mall_Customers.csv")
+data = pd.read_csv(data_path)
 
 # Drop CustomerID
 data = data.drop('CustomerID', axis=1)
