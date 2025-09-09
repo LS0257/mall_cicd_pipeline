@@ -10,9 +10,6 @@ data_path= os.path.join(BASE_DIR, 'data', 'Mall_Customers.csv')
 # Load the mall customer dataset
 data = pd.read_csv(data_path)
 
-# Drop CustomerID
-data = data.drop('CustomerID', axis=1)
-
 # Convert categorical variable 'Gender' to numerical values
 data['Genre'] = data['Genre'].map({'Male': 0, 'Female': 1})
 
