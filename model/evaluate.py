@@ -1,5 +1,5 @@
 import pandas as pd
-from sklearn.model_selectionimport train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.metricsimport accuracy_score
 import joblib
 import os
