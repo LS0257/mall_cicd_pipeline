@@ -3,7 +3,7 @@ import joblib
 from sklearn.ensemble import RandomForestClassifier
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(_file_))  # go one level up
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
 data_path= os.path.join(BASE_DIR, 'mall_customer_model.pkl')
 model = joblib.load(data_path)
 
@@ -12,5 +12,5 @@ class TestModelTraining(unittest.TestCase):
         # model = joblib.load('mall_customer_model.pkl')
         self.assertIsInstance(model, RandomForestClassifier)
         self.assertGreaterEqual(len(model.feature_importances_), 4)
-if _name_ == '_main_':
+if __name__ == '__main__':
     unittest.main()
