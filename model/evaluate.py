@@ -22,7 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Load the saved model
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
-data_path= os.path.join(BASE_DIR, 'mall_customers_model.pkl')
+data_path= os.path.join(BASE_DIR, 'mall_customer_model.pkl')
 model = joblib.load(data_path)
 
 # Make predictions

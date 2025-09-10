@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))  # go one level up
-data_path= os.path.join(BASE_DIR, 'mall_customers_model.pkl')
+data_path= os.path.join(BASE_DIR, 'mall_customer_model.pkl')
 model = joblib.load(data_path)
 
 class TestModelTraining(unittest.TestCase):
